@@ -4,11 +4,6 @@ A real-time chat application built with Flutter and Firebase. Supports instant m
 
 ---
 
-## Screenshots
-
-> Add your screenshots here after recording the app
-
----
 
 ## Features
 
@@ -112,46 +107,6 @@ String chatRoomId = ids.join('_');
 
 ---
 
-## Getting Started
-
-### Prerequisites
-- Flutter 3.24 or above
-- Dart SDK
-- Firebase account
-- Node.js (for Firebase CLI)
-
-### Setup
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/yourusername/chat_app.git
-cd chat_app
-```
-
-**2. Install dependencies**
-```bash
-flutter pub get
-```
-
-**3. Create a Firebase project**
-- Go to [console.firebase.google.com](https://console.firebase.google.com)
-- Create a new project
-- Enable **Email/Password** Authentication
-- Create a **Firestore** database in test mode
-
-**4. Connect Flutter to Firebase**
-```bash
-dart pub global activate flutterfire_cli
-flutterfire configure
-```
-
-**5. Run the app**
-```bash
-flutter run
-```
-
----
-
 ## Key Implementation Details
 
 ### Auth Gate
@@ -210,15 +165,3 @@ final userProvider = StreamProvider<QuerySnapshot>((ref) {
 - Building WhatsApp-style chat UI from scratch
 
 ---
-
-## Author
-
-**Siddharth Tyagi**  
-B.Tech ELCE — ABES Engineering College  
-[GitHub](https://github.com/yourusername) · [LinkedIn](https://linkedin.com/in/yourusername)
-
----
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
