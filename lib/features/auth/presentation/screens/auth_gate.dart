@@ -1,13 +1,9 @@
 import 'package:chat_app/features/auth/presentation/providers/auth_provider.dart';
 import 'package:chat_app/features/auth/presentation/screens/login_screen.dart';
-import 'package:chat_app/features/auth/presentation/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../home/presentation/screens/home_screen.dart';
-
-
 
 class AuthGate extends ConsumerWidget {
 
@@ -32,7 +28,14 @@ class AuthGate extends ConsumerWidget {
               )
           );
         },
-        loading: () => Scaffold(body: Center(child: CircularProgressIndicator()))
+        loading: () => const Scaffold(
+          body: Center(
+            child: CircularProgressIndicator(
+              strokeWidth: 2.5,
+              valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF14B8A6)),
+            ),
+          ),
+        ),
     );
   }
 }
